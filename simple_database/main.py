@@ -83,10 +83,10 @@ class Table(object):
         
         with open(self.table_filepath, 'r') as f:
             all_rows = json.load(f)['rows']
-            k, v = kwargs.items()[0]
             for i in all_rows:
-                if i['nationality'] == v:
-                    yield Row(i)
+                for my_key, my_value in kwargs.items():
+                    if i[my_key] == my_value:
+                        yield Row(i)
                     
 
         # IMPORTANT: Each of the rows returned in each loop of the generator
