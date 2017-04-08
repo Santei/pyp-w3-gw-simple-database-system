@@ -26,6 +26,7 @@ class SimpleDatabaseTestCase(unittest.TestCase):
             {'name': 'alive', 'type': 'bool'},
         ])
         self.db.authors.insert(1, 'Jorge Luis Borges', date(1899, 8, 24), 'ARG', False)
+        # import ipdb; ipdb.set_trace()
         self.db.authors.insert(2, 'Edgard Alan Poe', date(1809, 1, 19), 'USA', False)
 
     def tearDown(self):
