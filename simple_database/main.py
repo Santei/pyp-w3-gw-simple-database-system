@@ -188,20 +188,3 @@ def connect_database(db_name):
     Connectes to an existing database, and returns the connection object.
     """
     return DataBase(name=db_name)
-
-
-
-
-
-"""
-{
-    "rows": [], 
-    "columns": [
-        {"type": "int", "name": "id"}, 
-        {"type": "str", "name": "name"}, 
-        {"type": "date", "name": "birth_date"}, 
-        {"type": "str", "name": "nationality"}, 
-        {"type": "bool", "name": "alive"}]}
-        
-    {"rows": [{"birth_date": "1899-08-24", "nationality": "ARG", "id": 1, "alive": false, "name": "Jorge Luis Borges"}], "columns": [{"type": "int", "name": "id"}, {"type": "str", "name": "name"}, {"type": "date", "name": "birth_date"}, {"type": "str", "name": "nationality"}, {"type": "bool", "name": "alive"}]}
-"""
